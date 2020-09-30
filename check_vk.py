@@ -3,6 +3,10 @@ from datetime import datetime
 
 import vk_api
 import telebot
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 TG_BOT_TOKEN = os.environ.get('TG_BOT_TOKEN')
