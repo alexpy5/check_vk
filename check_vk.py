@@ -60,6 +60,7 @@ def get_unread_messages(conversation, vk):
 
 
 def add_messages_to_list(messages, last_id_vk, full_name, vk_msgs_list):
+    last_id_vk = int(last_id_vk)
     for msg in messages:
         if msg['id'] > last_id_vk:
             vk_msgs_list.append(
